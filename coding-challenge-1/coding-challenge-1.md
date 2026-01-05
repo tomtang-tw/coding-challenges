@@ -3,7 +3,6 @@
 ## **Build a Smart Team Rotator API – v1**
 
 > A minimal service that returns fair rotations for a team using simple rules.
-> 
 
 ---
 
@@ -33,9 +32,9 @@ This is **not** about completeness — it’s about **clarity and correctness**.
 
 - A team has a list of members
 - A member has:
-    - `id`
-    - `name`
-    - `isActive` (boolean)
+  - `id`
+  - `name`
+  - `isActive` (boolean)
 
 👉 No CRUD API required
 
@@ -46,12 +45,12 @@ This is **not** about completeness — it’s about **clarity and correctness**.
 ### 2️⃣ Rotation Logic (Core Focus)
 
 - API/function returns:
-    - The **next member** (default)
-    - Optionally the **next N members**
+  - The **next member** (default)
+  - Optionally the **next N members**
 - Rules:
-    - Must not return the **same member twice in a row**
-    - Must **skip inactive members**
-    - Rotation must be **fair over time** (simple round-robin is fine)
+  - Must not return the **same member twice in a row**
+  - Must **skip inactive members**
+  - Rotation must be **fair over time** (simple round-robin is fine)
 
 ---
 
@@ -80,9 +79,9 @@ To avoid over-engineering:
 ## 🧪 Testing (Focused)
 
 - Unit tests for:
-    - No immediate repetition
-    - Skipping inactive members
-    - Rotation order correctness
+  - No immediate repetition
+  - Skipping inactive members
+  - Rotation order correctness
 
 👉 3–5 tests is enough.
 
@@ -94,6 +93,57 @@ Each team submits:
 
 - Git repository
 - README (max 1 page) including:
-    - How to run
-    - Rotation approach
-    - One trade-off they consciously made
+  - How to run
+  - Rotation approach
+  - One trade-off they consciously made
+
+# 🧮 Scoring Template
+
+## 🏆 Total: **100 Points**
+
+---
+
+## 1️⃣ Core Logic Correctness — **40 pts**
+
+| Criteria                | Points |
+| ----------------------- | ------ |
+| No immediate repetition | 15     |
+| Skips inactive members  | 15     |
+| Correct rotation order  | 10     |
+
+---
+
+## 2️⃣ Code Quality & Design — **25 pts**
+
+| Criteria                         | Points |
+| -------------------------------- | ------ |
+| Readability & naming             | 10     |
+| Separation of concerns           | 10     |
+| Simplicity (no over-engineering) | 5      |
+
+---
+
+## 3️⃣ Tests & Reliability — **15 pts**
+
+| Criteria         | Points |
+| ---------------- | ------ |
+| Core logic tests | 10     |
+| Edge cases       | 5      |
+
+---
+
+## 4️⃣ Communication & Demo — **10 pts**
+
+| Criteria          | Points |
+| ----------------- | ------ |
+| Clear explanation | 5      |
+| README clarity    | 5      |
+
+---
+
+## 🌟 Bonus Points (Max +10)
+
+| Bonus              | Points |
+| ------------------ | ------ |
+| Junior-led demo    | +5     |
+| Elegant simplicity | +5     |
