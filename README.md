@@ -21,7 +21,7 @@ Welcome to the TWVN Coding Challenge! Whether you're a seasoned developer or jus
 
 ### Step 1: Register Your Interest
 - Drop a message in the `#twvn-coding-challenge` Google Chat space ([https://chat.google.com/room/AAQADlZAmk0?cls=7](https://chat.google.com/room/AAQADlZAmk0?cls=7))
-- Or email the organizer: [organizer@company.com]
+- Or email the organizer: [Steve Lam] – [tai.lam@thoughtworks.com], [Tom Tang] – [tom.tang@thoughtworks.com]
 
 ### Step 2: Form Your Team
 - **Option A**: Join solo (you'll get paired with others)
