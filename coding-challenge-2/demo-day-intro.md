@@ -1,26 +1,51 @@
-# Coding Challenge 2 — Demo Day Kick-off Introduction
+# 🎬 Coding Challenge 2 — Demo Day Kick-off
 
-For this round, our participants stepped into the shoes of the **Customer Domain team at a regional Cinema Ticket Booking Platform** — already live in Vietnam, Thailand, and Singapore, and now expanding into the **Philippines**.
+Welcome, teams! 👋 Here's the stage you've been building for.
 
-The mission: build a **shared SMS Sending Capability**. The first user is OTP verification for membership registration, but very quickly it has to serve **Booking, ERP, Accounting, Operations, and Data** — all calling the same module.
+---
 
-Concretely, each team had to design a system that:
+## 🎯 The Mission, in One Breath
 
-- Accepts a request of `(messageId, country, phoneNumber, message)` from **any** domain;
-- Picks **exactly one** SMS provider based on a `(country + carrier) → provider` routing table — and lets that table change when we add the Philippines or update Vietnam's rules, **without rewriting code**;
-- Walks each message through a full lifecycle — `New → Send-to-provider → Queue → Send-to-carrier → Send-success`, plus failure and retry paths;
-- Captures **estimated cost** when it hands off to a provider, and **actual cost** when delivery succeeds;
-- Handles **async provider callbacks** for state and cost updates;
-- And makes all of this **traceable** — so Accounting and Operations can answer real questions about volume, cost, and success rate.
+For this round, you stepped into the shoes of the **Customer Domain team at a regional Cinema Ticket Booking Platform** — already live in 🇻🇳 Vietnam, 🇹🇭 Thailand, and 🇸🇬 Singapore, and now expanding into 🇵🇭 **the Philippines**.
 
-All provider, queue, and database interactions are **simulated** — the goal isn't infrastructure, it's **design**.
+Your mission: build a **shared SMS Sending Capability**. 📩
+The first user is **OTP verification** for membership registration — but very quickly it has to serve **Booking, ERP, Accounting, Operations, and Data**, all calling the same module.
 
-**What to Watch For**
+---
 
-1. **Problem understanding & design approach** — How did they read the problem, and what shape did their solution take?
-2. **Key trade-offs** — What did they intentionally choose _not_ to do, and why?
-3. **Scalability, maintainability, and performance** — How does their design absorb new countries, new providers, new domains, and higher volume — without becoming the next "big ball of mud"?
+## 🧩 What You Built
 
-**Close**
+Concretely, each team designed a system that:
 
-Remember — Demo Day is a **celebration**, not a job interview. Cheer the bold ideas, ask the curious questions, and have fun.
+- 📨 **Accepts a request** of `(messageId, country, phoneNumber, message)` from **any** domain.
+- 🧭 **Picks exactly one provider** via a `(country + carrier) → provider` routing table — and lets that table change when we add the Philippines or update Vietnam's rules, **without rewriting code**.
+- 🔄 **Walks each message through the full lifecycle** — `New → Send-to-provider → Queue → Send-to-carrier → Send-success`, plus failure and retry paths.
+- 💰 **Tracks cost** — _estimated_ when it hands off to a provider, _actual_ when delivery succeeds.
+- 📡 **Handles async provider callbacks** for state and cost updates.
+- 🔍 **Stays traceable** — so Accounting and Operations can answer real questions about volume, cost, and success rate.
+
+> 💡 All provider, queue, and database interactions are **simulated** — the goal isn't infrastructure, it's **design**.
+
+---
+
+## 🔭 What We're Watching For
+
+As you present, walk us through these three things — and audience, listen for them too:
+
+| #   | Focus Area                                       | The Question We Want You to Answer                                                                                            |
+| --- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| 1️⃣  | 🧠 **Problem understanding & design approach**   | How did you read the problem, and what shape did your solution take?                                                          |
+| 2️⃣  | ⚖️ **Key trade-offs**                            | What did you intentionally choose _not_ to do, and why?                                                                       |
+| 3️⃣  | 🏗️ **Scalability, maintainability & performance** | How does your design absorb new countries, new providers, new domains, and higher volume — without becoming a big ball of mud? |
+
+---
+
+## 🎉 One Last Thing
+
+Demo Day is a **celebration**, not a job interview.
+
+- 🙌 Cheer the bold ideas.
+- 🤔 Ask the curious questions.
+- 😄 Have fun.
+
+**First team — the stage is yours.** 🎤
